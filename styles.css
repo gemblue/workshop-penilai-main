@@ -1,0 +1,271 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #4680ff;
+}
+
+body {
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #1d1d1f;
+      background-image: url('bg1.jpg');
+      background-size: cover;
+      background-repeat: no-repeat; 
+      background-position: center;   
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.container h1 {
+  margin-right: 50px;
+}
+
+main {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #6e6e73;
+  display: flex;
+}
+
+.kaki {
+    background-color: #dddddd;
+    color: #6e6e73;
+    min-height: 7vh;
+    display: flex;
+    align-items: center;
+    padding-left: 3vh;
+}
+
+.bantuan {
+    min-height: 5vh;
+    border-top: solid 1px #252525;
+    display: flex;
+    align-items: center;
+    padding-left: 3vh;
+}
+
+/* Header Judul */
+
+h1 {
+  line-height: 35pt;
+}
+
+h2 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+/* Paragraf umum */
+
+/* Video styling */
+video {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 24px;
+}
+
+/* Tombol */
+button {
+  padding: 10px 20px;
+  background-color: #2980b9;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #1c5980;
+}
+
+/* Link daftar materi */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 16px;
+}
+
+ul li {
+  margin-bottom: 12px;
+}
+
+ul li a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Alert atau info box */
+.alert {
+  padding: 12px;
+  background-color: #ffecb3;
+  border: 1px solid #f0c36d;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* Printilan Login */
+ .login-container {
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  padding: 3rem 2rem;
+  border: 1px solid #d2d2d7;
+  border-radius: 8px;
+  background-color: #fbfbfb;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+.login-container h2 {
+      font-size: 20pt;
+      font-weight: 400;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+.login-container label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+.login-container input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #d2d2d7;
+      border-radius: 8px;
+      font-size: 16px;
+      background-color: #f9f9f9;
+    }
+
+.login-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #0071e3;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+.login-container button:hover {
+      background-color: #005bb5;
+    }
+
+.note {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 14px;
+      color: #6e6e73;
+    }
+
+    /* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffffcc;
+  backdrop-filter: blur(10px);
+  padding: 0.75rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.nav-left, .nav-center, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left img {
+  height: 28px;
+  margin-right: 1rem;
+}
+
+.nav-center {
+  flex: 1;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-right a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #1d1d1f;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.nav-right a:hover {
+  color: #0071e3;
+}
+
+/* Konten utama dashboard */
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-center {
+    font-size: 0.9rem;
+  }
+
+  .nav-right a {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
+}
